@@ -16,7 +16,6 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #F8EDED;
-  margin: 5px;
 }
 header nav ul {
   display: flex;
@@ -57,6 +56,7 @@ header div img {
   padding: 20px;
   margin: 50px;
   text-align: center;
+  align-items: stretch;
   grid-template-columns: repeat(4, 1fr);
 }
 @media (max-width: 992px) {
@@ -75,6 +75,7 @@ header div img {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card:hover {
@@ -300,6 +301,7 @@ body {
   justify-content: center;
   max-width: 1100px;
   margin: 0 auto;
+  align-items: stretch;
 }
 .servicios .servicios-grid .servicio {
   background: white;
@@ -307,6 +309,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -331,7 +334,7 @@ body {
 .servicios .servicios-grid .servicio .btn-servicio {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #173B45;
+  background-color: #007bff;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -339,8 +342,7 @@ body {
   transition: background-color 0.3s ease;
 }
 .servicios .servicios-grid .servicio .btn-servicio:hover {
-  background-color: #B43F3F;
-  border-color: #c75f5f;
+  background-color: #0056b3;
 }
 .servicios .servicios-grid .servicio:hover {
   transform: translateY(-5px);
@@ -360,7 +362,7 @@ section div {
 }
 
 .img-ceo {
-  border-radius: 15px;
+  border-radius: 20%;
 }
 
 /* main */
@@ -371,6 +373,100 @@ section div {
 .img-nuestra-historia {
   width: 500px;
   height: auto;
+}
+
+.nuestra-historia-contenido {
+  margin-bottom: 150px;
+}
+
+.contacto {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+.contacto .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  gap: 40px;
+}
+.contacto .contenedor .info-contacto, .contacto .contenedor .formulario-contacto {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+.contacto .contenedor h2 {
+  color: #333;
+  font-size: 2rem;
+}
+.contacto .contenedor p {
+  font-size: 1rem;
+  color: #555;
+}
+.contacto .contenedor form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contacto .contenedor form input, .contacto .contenedor form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.contacto .contenedor form button {
+  background-color: #B43F3F;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contacto .contenedor form button:hover {
+  background-color: rgba(255, 130, 37, 0.7);
+}
+
+/* estilos nuestros clientes */
+/* comentarios*/
+.comentarios {
+  background-color: #F8EDED;
+  padding: 40px 20px;
+}
+
+.comentarios h2 {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.comentarios-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.comentario {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+}
+
+.comentario-texto {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.comentario-cliente {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
 }
 
 /*# sourceMappingURL=main.css.map */
