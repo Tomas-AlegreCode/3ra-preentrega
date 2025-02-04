@@ -46,9 +46,7 @@ header {
 }
 
 /*Estilos del main*/
-
-
-/*estilos secciones home*/
+/*home*/
 // seccion numero 1 grid-servicios
 .grid-wrapper {
     text-align: center;
@@ -62,7 +60,6 @@ header {
     }
   }
   
-// Estilos generales
 .grid-container {
     display: grid;
     gap: 20px;
@@ -85,18 +82,18 @@ header {
     }
   }
   
-  // Estilos de cada tarjeta
-  .card {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+// Estilos de cada tarjeta
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    }
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
   
     h3 {
       font-size: 1.5rem;
@@ -109,35 +106,35 @@ header {
     }
   }
 
-  /*seccion 2 nuestros objetivos*/
+/*seccion 2 nuestros objetivos*/
 
-  main {
-    .nuestro-objetivo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        height: 425px;
-        background-color: $color-banner-dos;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        gap: 2.5rem;
+main {
+  .nuestro-objetivo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: 425px;
+      background-color: $color-banner-dos;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      gap: 2.5rem;
         
-    } 
-    .p-nuestro-objetivo {
-        font-size: large;
-        word-wrap: break-word;
-        text-align: justify;
-        max-width: 700px;
-        
-    }
-    .h2-nuestro-objetivo {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-style: oblique;
-        font-size: xx-large;
-    }
+  } 
+  .p-nuestro-objetivo {
+      font-size: large;
+      word-wrap: break-word;
+      text-align: justify;
+      max-width: 700px;
+      
   }
+  .h2-nuestro-objetivo {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-style: oblique;
+      font-size: xx-large;
+  }
+}
 
 /*Seccion 3: redes sociales*/
 main {

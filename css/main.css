@@ -39,7 +39,7 @@ header div img {
 }
 
 /*Estilos del main*/
-/*estilos secciones home*/
+/*home*/
 .grid-wrapper {
   text-align: center;
   padding: 20px;
@@ -244,18 +244,133 @@ h2, p, .lista-horario {
   }
 }
 
-/*Media query grid mobile*/
-@media (max-width: 768px) {
-  .grid-servicios {
-    grid-template-columns: 1fr;
-  }
+/*estilos servicios*/
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F8EDED;
+  margin: 5px;
 }
-/*mq tablet*/
-@media (min-width: 769px) and (max-width: 1024px) {
-  .grid-servicios {
-    grid-template-columns: repeat(2, 1fr);
-  }
+header nav ul {
+  display: flex;
+  gap: 50px;
+  margin-right: 10px;
 }
-/*estilos de novedades*/
+
+nav ul li {
+  list-style: none;
+  align-items: center;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header div img {
+  margin-left: 10px;
+}
+
+body {
+  background-color: #F8EDED;
+}
+
+.servicios {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+}
+.servicios .servicios-titulo {
+  margin-bottom: 40px;
+}
+.servicios .servicios-titulo h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+.servicios .servicios-titulo p {
+  font-size: 1.2rem;
+  color: #666;
+}
+.servicios .servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.servicios .servicios-grid .servicio {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 250px;
+}
+.servicios .servicios-grid .servicio i {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+.servicios .servicios-grid .servicio h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+.servicios .servicios-grid .servicio p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+.servicios .servicios-grid .servicio .btn-servicio {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #173B45;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.servicios .servicios-grid .servicio .btn-servicio:hover {
+  background-color: #B43F3F;
+  border-color: #c75f5f;
+}
+.servicios .servicios-grid .servicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* estilos sobre nosotros */
+/* header */
+.divider {
+  margin: 20px;
+  background-color: black;
+}
+
+section div {
+  justify-content: center;
+  align-items: center;
+}
+
+.img-ceo {
+  border-radius: 15px;
+}
+
+/* main */
+.contenedor-titulo {
+  margin: 5%;
+}
+
+.img-nuestra-historia {
+  width: 500px;
+  height: auto;
+}
 
 /*# sourceMappingURL=main.css.map */

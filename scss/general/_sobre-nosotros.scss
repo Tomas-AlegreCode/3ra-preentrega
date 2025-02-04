@@ -1,0 +1,32 @@
+//import variables 
+@import "../utilidades/variables";
+
+/* estilos sobre nosotros */
+/* header */
+
+.divider {
+    margin: 20px;
+    background-color: black;
+}
+
+section {
+    div {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.img-ceo {
+    border-radius: 15px;
+}
+
+/* main */
+
+.contenedor-titulo {
+    margin: 5%;
+}
+
+.img-nuestra-historia {
+width: 500px;
+height: auto;
+}
