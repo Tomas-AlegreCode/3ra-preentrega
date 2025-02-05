@@ -8,7 +8,6 @@
 header {
     @include flex; 
     background-color: $color-de-fondo;
-    margin: 5px;
     nav {
         ul {
             display: flex;
@@ -44,14 +43,16 @@ header {
     }
 }
 
+/*Estilos body servicios*/
 body {
     background-color: $color-de-fondo;
 }
 
+/*Main, grid servicios*/
 .servicios {
   text-align: center;
   padding: 60px 20px;
-  background-color: #f8f9fa;
+  background-color: $color-de-fondo;
 
   .servicios-titulo {
     margin-bottom: 40px;
@@ -110,7 +111,7 @@ body {
       .btn-servicio {
         display: inline-block;
         padding: 10px 20px;
-        background-color: #007bff;
+        background-color: $color-resaltar-texto;
         color: white;
         text-decoration: none;
         border-radius: 5px;
@@ -118,7 +119,7 @@ body {
         transition: background-color 0.3s ease;
 
         &:hover {
-          background-color: #0056b3;
+          background-color: $color-banner-uno;
         }
       }
 
