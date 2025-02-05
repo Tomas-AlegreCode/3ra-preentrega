@@ -17,7 +17,6 @@ Este proyecto está desarrollado con las siguientes tecnologías:
 - **HTML5** 📄 - Para la estructura del sitio
 - **SASS (SCSS)** 🎨 - Para los estilos y diseño responsive
 - **Bootstrap** 📱 - Para una maquetación rápida y adaptable
-- **JavaScript** ⚡ - Para interactividad en el sitio
 - **Git & GitHub** 🛠️ - Para el control de versiones
 
 ---
