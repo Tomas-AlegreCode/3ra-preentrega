@@ -10,6 +10,35 @@ body {
   background-color: #F8EDED;
 }
 
+/*Estilos slieder del header*/
+.menu-desktop ul li {
+  position: relative;
+  display: inline-block;
+}
+.menu-desktop ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+.menu-desktop ul li a:hover {
+  color: #173B45;
+}
+.menu-desktop ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: rgba(255, 130, 37, 0.7);
+  transition: width 0.3s ease-in-out;
+}
+.menu-desktop ul li:hover::after {
+  width: 100%;
+}
+
 /* estilos del header*/
 header {
   display: flex;
@@ -474,34 +503,6 @@ section div {
   font-size: 0.9rem;
   font-weight: bold;
   color: #333;
-}
-
-.menu-desktop ul li {
-  position: relative;
-  display: inline-block;
-}
-.menu-desktop ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
-  padding: 5px 0;
-  transition: color 0.3s ease;
-}
-.menu-desktop ul li a:hover {
-  color: #173B45;
-}
-.menu-desktop ul li::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0%;
-  height: 2px;
-  background-color: rgba(255, 130, 37, 0.7);
-  transition: width 0.3s ease-in-out;
-}
-.menu-desktop ul li:hover::after {
-  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
